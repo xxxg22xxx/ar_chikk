@@ -4,25 +4,31 @@
   <meta charset="UTF-8" />
   <title>Face Cube AR</title>
   <style>
-    body, html {
-      margin: 0; padding: 0; overflow: hidden;
-      background: black;
-    }
-    video, canvas {
-      position: absolute;
-      width: 100vw;
-      height: 100vh;
-      object-fit: cover;
-    }
-    #start-btn {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      z-index: 10;
-      font-size: 20px;
-      padding: 10px;
-    }
-  </style>
+  body, html {
+    margin: 0; padding: 0; overflow: hidden;
+    background: black;
+  }
+  video, canvas {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
+  #start-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    font-size: 20px;
+    padding: 10px;
+    background: #00ffff;
+    border: none;
+    border-radius: 8px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+  }
+</style>
   <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
